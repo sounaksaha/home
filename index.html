@@ -1,0 +1,1049 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ग्रामीण जीवन विकास सेवा मंडळ</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+
+
+    <style>
+        /* For screens up to 700px wide */
+        @media (max-width: 650px) {
+            .slider-video-container {
+                width: 100%;
+                /* Set the width of the frame to 100% */
+                height: auto;
+                /* Allow the height to adjust automatically */
+                max-width: 400px;
+                /* Limit the maximum width of the frame */
+                max-height: 350px;
+                /* Limit the maximum height of the frame */
+            
+            
+            }
+            .video-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45vh;
+            /* Adjust as needed */
+        }
+
+            .slider-video-container video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                /* Ensure the video covers the entire container */
+            }
+        }
+
+        .video-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            /* Adjust as needed */
+        }
+
+        .slider-video-container {
+            width: 750px;
+            /* Set the width of the frame */
+            height: 500px;
+            /* Set the height of the frame */
+            border: 1px solid #ccc;
+            /* Add a border for the frame */
+            overflow: hidden;
+        }
+
+        .slider-video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensure the video covers the entire container */
+        }
+
+
+        .divider {
+            display: flex;
+
+            &:before,
+            &:after {
+                content: "";
+                flex: 1;
+            }
+        }
+
+        .donotcross {
+            overflow: hidden;
+            align-items: center;
+            background: hsl(182, 100%, 50%);
+            color: black;
+            height: 2em;
+            line-height: 2em;
+
+            &:before,
+            &:after {
+                background: white;
+                padding: 50px 0;
+                height: 0;
+                transform: rotate(45deg);
+            }
+        }
+
+        .h-divider {
+            margin: auto;
+            margin-top: 80px;
+            width: 80%;
+            position: relative;
+        }
+
+        .h-divider .shadow {
+            overflow: hidden;
+            height: 20px;
+        }
+
+        .h-divider .shadow:after {
+            content: '';
+            display: block;
+            margin: -25px auto 0;
+            width: 100%;
+            height: 25px;
+            border-radius: 125px/12px;
+            box-shadow: 0 0 8px black;
+        }
+
+        .h-divider .text {
+            width: 100px;
+            height: 45px;
+            padding: 10px;
+            position: absolute;
+            bottom: 100%;
+            margin-bottom: -33px;
+            left: 50%;
+            margin-left: -60px;
+            border-radius: 100%;
+            box-shadow: 0 2px 4px #999;
+            background: white;
+        }
+
+        .h-divider .text i {
+            position: absolute;
+            top: 4px;
+            bottom: 4px;
+            left: 4px;
+            right: 4px;
+            border-radius: 100%;
+            border: 1px dashed #aaa;
+            text-align: center;
+            line-height: 50px;
+            font-style: normal;
+            color: #999;
+        }
+
+        .h-divider .text2 {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            bottom: 100%;
+            margin-bottom: -35px;
+            left: 50%;
+            margin-left: -25px;
+            border-radius: 100%;
+            box-shadow: 0 2px 4px #999;
+            background: white;
+        }
+
+        .h-divider img {
+            position: absolute;
+            margin: 4px;
+            max-width: 60px;
+            border-radius: 100%;
+            border: 1px dashed #aaa;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .contact-area {
+            background: #1A1E25;
+            color: #868c96;
+            padding: 60px 0;
+            border-bottom: 1px solid #353C46;
+        }
+
+        .contact-content p {
+            font-size: 15px;
+            margin: 30px 0 60px;
+            position: relative;
+        }
+
+        .contact-content p::after {
+            background: #353C46;
+            bottom: -30px;
+            content: "";
+            height: 1px;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%);
+            width: 80%;
+        }
+
+        .contact-content h6 {
+            color: #8b9199;
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .contact-content span {
+            color: #353c47;
+            margin: 0 10px;
+        }
+
+        .contact-social {
+            margin-top: 30px;
+        }
+
+        .contact-social>ul {
+            display: inline-flex;
+        }
+
+        .contact-social ul li a {
+            border: 1px solid #8b9199;
+            color: #8b9199;
+            display: inline-block;
+            height: 40px;
+            margin: 0 10px;
+            padding-top: 7px;
+            transition: all 0.4s ease 0s;
+            width: 40px;
+        }
+
+        .contact-social ul li a:hover {
+            border: 1px solid #FAB702;
+            color: #FAB702;
+        }
+
+        .contact-content img {
+            max-width: 210px;
+        }
+
+
+        footer p {
+            background: #1A1E25;
+            color: #868c96;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer img {
+            width: 44px;
+        }
+
+        .sliderr-img img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 900px) {
+            .slider-img img {
+                height: 450px;
+                /* Adjust this value for mobile screens */
+            }
+        }
+
+        .caption {
+            border: 2px solid #4CAF50;
+            /* Green border */
+            padding: 20px;
+            border-radius: 20px;
+            /* Rounded corners */
+            background-color: #f1f1f1;
+            /* Light grey background */
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            /* Shadow */
+        }
+
+        .caption h3 {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: #4CAF50;
+            /* Green text */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            /* Text shadow */
+        }
+
+        @media (max-width: 767px) {
+            .mv-img .col-md-6 {
+                margin-bottom: 20px;
+                /* Adjust the value as needed */
+            }
+        }
+
+        .mvs-img img {
+            width: 100%;
+            height: 200px;
+            /* Adjust height as needed */
+            border: 2px solid #000;
+            /* Black border */
+            box-sizing: border-box;
+            /* Include border in image dimensions */
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header class="continer-fluid ">
+        <!-- <div  class="header-top">
+        <div class="container">
+            <div class="row col-det">
+                <div class="col-lg-6 d-none d-lg-block">
+                    <ul class="ulleft">
+                        <li>
+                            <i class="far fa-envelope"></i>
+                            sales@smarteyeapps.com
+                            <span>|</span></li>
+                        <li>
+                            <i class="fas fa-phone-volume"></i>
+                            +876 987 666 5433</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 folouws">
+                  
+                    <ul class="ulright">
+                       <li> <small>Folow Us </small>:</li>
+                        <li>
+                            <i class="fab fa-facebook-square"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter-square"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 d-none d-md-block col-md-6 btn-bhed">
+                    <button class="btn btn-sm btn-success">Join Us</button>
+                    <button class="btn btn-sm btn-default">Donate</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+        <div id="menu-jk" class="header-bottom">
+            <div class="container">
+                <div class="row nav-row">
+                    <div class="col-lg-3 col-md-12 logo">
+                        <a href="index.html">
+
+                            <h4 style="text-align: center;color: #093c94;">ग्रामीण जीवन विकास सेवा मंडळ</h4>
+                            <a data-toggle="collapse" data-target="#menu" href="#menu"><i
+                                    class="fas d-block d-lg-none  small-menu fa-bars"></i></a>
+                        </a>
+
+                    </div>
+                    <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
+
+                        <ul class="navbad">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#services">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Services</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer" id="pdf-link">Donate</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer" >Contact US</a>
+                            </li>
+
+
+
+
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ******************** Slider Starts Here ******************* -->
+    <div class="sliderr">
+        <!-- Set up your HTML -->
+        <div class="owl-carousel ">
+            <div class="slider-img">
+                <div class="item">
+                    <div class="slider-img"><img src="assets/images/fr.jpg" alt="" height="750"></div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--  ************************* About Us Starts Here ************************** -->
+
+    <div class="about-us container-fluid" style=" background: linear-gradient(105deg,#6e99e6 ,#093c94); ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <h1 style="color: #ffffff; text-align: center;">ग्रामीण जीवन विकास सेवा मंडळ
+                    </h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div class="about-us container-fluid" style=" background: linear-gradient(105deg,#6e99e6 ,#093c94); ">
+    <h2 class="divider donotcross" contenteditable>Dग्रामीण जीवन विकास सेवा मंडळ</h2>
+</div> -->
+    <section>
+        <div class="slider">
+            <!-- Set up your HTML -->
+            <div class="owl-carousel ">
+                <div class="slider-img">
+                    <div class="item">
+                        <div class="slider-img"><img src="assets/images/4.jpg" alt="" height="750"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-img"><img src="assets/images/2.jpg" alt="" height="750"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-img"><img src="assets/images/1.jpg" alt="" height="750"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="slider-img"><img src="assets/images/3.jpg" alt="" height="750"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-img"><img src="assets/images/5.jpg" alt="" height="750"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-img"><img src="assets/images/fr.jpg" alt="" height="750"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-img"><img src="assets/images/7.jpg" alt="" height="750"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-img"><img src="assets/images/8.jpg" alt="" height="750"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-img"><img src="assets/images/9.jpg" alt="" height="750"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-img"><img src="assets/images/10.jpg" alt="" height="750"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-img"><img src="assets/images/sl1.jpg" alt="" height="750"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-img"><img src="assets/images/sl2.jpg" alt="" height="750"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-img"><img src="assets/images/sl3.jpg" alt="" height="750"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-img"><img src="assets/images/sl4.jpg" alt="" height="750"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="item">
+                    <div class="slider-img"><video src="assets/images/vid.mp4" alt="" autoplay muted loop height="750"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid mission-vision">
+    <div class="h-divider">
+        <div class="shadow"></div>
+    </div>
+
+    <div class="video-section">
+        <div class="item">
+            <div class="slider-video-container">
+                <video src="assets/images/vid.mp4" autoplay muted loop height="650" width="650"></video>
+            </div>
+        </div>
+    </div>
+
+    <div class="h-divider">
+        <div class="shadow"></div>
+    </div>
+    </section>
+
+    <!-- ################# Mission Vision Start Here #######################--->
+    <section class="container-fluid mission-vision">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="block">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mv-img">
+                                    <img src="assets/images/3.jpg" alt="" style="width: 100%; height: 200px;">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mv-img">
+                                    <img src="assets/images/fr.jpg" alt="" style="width: 100%; height: 200px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="caption mt-3">
+                            <h3>कामधेनु गोशाळा ईटावा
+
+                                एम.आय.डी.सी वाळूज ता. गंगापुर जि.छ.संभाजीनगर
+                            </h3>
+                            <!-- <p>This is the caption for Block 3.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="block">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mv-img">
+                                    <img src="assets/images/2.jpg" alt="" style="width: 100%; height: 200px;">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mv-img">
+                                    <img src="assets/images/5.jpg" alt="" style="width: 100%; height: 200px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="caption mt-3">
+                            <h3>श्रीकृष्ण गोशाळा वेरुळ ताः खुलताबाद
+                            </h3>
+                            <!-- <p>This is the caption for Block 3.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="block">
+                        <div class="row" style="margin-top: 30px">
+                            <div class="col-md-6">
+                                <div class="mv-img">
+                                    <img src="assets/images/1.jpg" alt="" style="width: 100%; height: 200px;">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mv-img">
+                                    <img src="assets/images/10.jpg" alt="" style="width: 100%; height: 200px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="caption mt-3">
+                            <h3>गौरी गोशाळा
+                            </h3>
+                            <!-- <p>This is the caption for Block 3.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="block">
+                        <div class="row" style="margin-top: 30px">
+                            <div class="col-md-6">
+                                <div class="mv-img">
+                                    <img src="assets/images/4.jpg" alt="" style="width: 100%; height: 200px;">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mv-img">
+                                    <img src="assets/images/8.jpg" alt="" style="width: 100%; height: 200px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="caption mt-3">
+                            <h3>ग्रामीण जीवन विकास सेवा मंडळ
+
+                                ऑफिस पत्ताः शिवाई नगर, शिवाई चौक, ए.एस क्लब जवळ छत्रपती संभाजीनगर महा - ४३११३६
+
+                                अध्यक्षः नानासाहेब ब</h3>
+                            <!-- <p>This is the caption for Block 4.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="h-divider">
+            <div class="shadow"></div>
+            <div class="text2"><img
+                    src="https://t1.gstatic.com/images?q=tbn:ANd9GcQsmMfybMIwoE5etmOIAuvnFWdfv_8C1Bq15urJFqwhhI55FyYNP2YuUA" />
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="events">
+        <div class="container">
+            <div class="row">
+                <!-- First Block -->
+                <div class="col-md-6" style="margin-bottom: 30px">
+                    <div class="block">
+                        <div class="caption mb-3">
+                            <h3>नोंदणी प्रमाणपत्र</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mvs-img">
+                                    <img src="assets/images/5.1.jpg" alt="" style="width: 100%; height: 200px;">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mvs-img">
+                                    <img src="assets/images/5.2.jpg" alt="" style="width: 100%; height: 200px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Block -->
+                <div class="col-md-6">
+                    <div class="block">
+                        <div class="caption mb-3">
+                            <h3>12A and 80G</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mvs-img">
+                                    <img src="assets/images/6.1.jpg" alt="" style="width: 100%; height: 200px;">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mvs-img">
+                                    <img src="assets/images/6.2.jpg" alt="" style="width: 100%; height: 200px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6" style="margin-bottom: 30px">
+                    <div class="block">
+                        <div class="caption mb-3">
+                            <h3>योगा
+                            </h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mvs-img">
+                                    <img src="assets/images/y1.jpg" alt="" style="width: 100%; height: 200px;">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mvs-img">
+                                    <img src="assets/images/y2.jpg" alt="" style="width: 100%; height: 200px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="col-md-6" style="margin-bottom: 30px">
+                        <div class="block">
+                            <div class="caption mb-3">
+                                <h3>संपूर्ण साक्षरता अभियान, औरंगाबाद</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mv-img">
+                                        <img src="assets/images/7.0.jpg" alt="" style="width: 100%; height: 200px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            <!-- Second Row -->
+            <div class="row justify-content-center" style="margin-top: 30px">
+                <div class="col-md-6">
+                    <div class="block">
+                        <div class="caption mb-3">
+                            <h3>Certificate</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mv-img">
+                                    <img src="assets/images/cer.jpg" alt="" style="width: 100%; height: 300px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- 
+    <div class="doctor-message">
+        <div class="inner-lay">
+            <div class="container">
+                <div class="row session-title">
+                    <h2>Our Achievemtns in Numbers</h2>
+                    <p>We can talk for a long time about advantages of our Dental clinic before other medical treatment
+                        facilities.
+                        But you can read the following facts in order to make sure of all pluses of our clinic:</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 numb">
+                        <h3>12+</h3>
+                        <span>YEARS OF EXPEREANCE</span>
+                    </div>
+                    <div class="col-sm-3 numb">
+                        <h3>1812+</h3>
+                        <span>HAPPY CHILDRENS</span>
+                    </div>
+                    <div class="col-sm-3 numb">
+                        <h3>52+</h3>
+                        <span>EVENTS</span>
+                    </div>
+                    <div class="col-sm-3 numb">
+                        <h3>48+</h3>
+                        <span>FUNT RAISED</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <section class="our-team team-11">
+        <div class="container">
+            <div class="session-title row">
+                <h2>Meet our Team</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla vel nisl a dictum. Donec ut
+                    est arcu. Donec hendrerit velit</p>
+            </div>
+            <div class="row team-row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-usr">
+                        <img src="assets/images/team/team-memb1.jpg" alt="">
+                        <div class="det-o">
+                            <h4>David Kanuel</h4>
+                            <i>CEO </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-usr">
+                        <img src="assets/images/team/team-memb2.jpg" alt="">
+                        <div class="det-o">
+                            <h4>David Kanuel</h4>
+                            <i>CFO</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-usr">
+                        <img src="assets/images/team/team-memb3.jpg" alt="">
+                        <div class="det-o">
+                            <h4>David Kanuel</h4>
+                            <i>Team Leader</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-usr">
+                        <img src="assets/images/team/team-memb4.jpg" alt="">
+                        <div class="det-o">
+                            <h4>David Kanuel</h4>
+                            <i>Project Manager</i>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="our-blog">
+        <div class="container">
+            <div class="row session-title">
+                <h2> Our Blog </h2>
+                <p>Take a look at what people say about US </p>
+            </div>
+            <div class="blog-row row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-blog">
+                        <figure>
+                            <img src="assets/images/events/image_01.jpg" alt="">
+                        </figure>
+                        <div class="blog-detail">
+                            <small>By Admin | August 10 2018</small>
+                            <h4>Methods of Recuirtments</h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet sit
+                                amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at,
+                                sagittis quis neque. Praesent.</p>
+                            <div class="link">
+                                <a href="">Read more </a><i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-blog">
+                        <figure>
+                            <img src="assets/images/events/image_02.jpg" alt="">
+                        </figure>
+                        <div class="blog-detail">
+                            <small>By Admin | August 10 2018</small>
+                            <h4>Methods of Recuirtments</h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet sit
+                                amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at,
+                                sagittis quis neque. Praesent.</p>
+                            <div class="link">
+                                <a href="">Read more </a><i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-blog">
+                        <figure>
+                            <img src="assets/images/events/image_03.jpg" alt="">
+                        </figure>
+                        <div class="blog-detail">
+                            <small>By Admin | August 10 2018</small>
+                            <h4>Methods of Recuirtments</h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet sit
+                                amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at,
+                                sagittis quis neque. Praesent.</p>
+                            <div class="link">
+                                <a href="">Read more </a><i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="contact-area" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="contact-content text-center">
+                        <h1 style="color: red;"> ग्रामीण जीवन विकास सेवा मंडळ </h1>
+                        <p style="color: #ffffff;">श्रीकृष्ण गोशाळा वेरूळ ता खुलताबाद संचलित र नं एफ 83 महा 1996 ग्रामीण
+                            जीवन विकास सेवा मंडळ बोरगाव ता गंगापुर जि छत्रपती संभाजीनगर महाराष्ट्र 431133 अध्यक्ष
+                            नानासाहेब बढे
+                        </p>
+                        <div class="hr"></div>
+                        <h4 style="color: #ffffff;">कार्यालय
+                        </h4>
+                        <h6 style="color: #ffffff;"> ग्रामीण जीवन विकास सेवा मंडळ बोरगाव शिवाईनगर शिवाई चौक ए एसक्लब जवळ
+                            छत्रपती संभाजीनगर महाराष्ट्र 431136</h6>
+
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p style="color: turquoise;"> Designed and Developed by <a href="https://www.incipienttechnologies.in/"
+                        style="color: #FAB702;"> INCIPIENT TECHNOLOGIES PVT. LTD</a></p>
+            </footer>
+        </div>
+    </section>
+
+
+
+</body>
+<script>
+    // Function to open the PDF file
+// Function to open the PDF file
+function openPDF(pdfUrl) {
+    window.open(pdfUrl, '_blank');
+}
+
+// Add event listener to the navbar menu item
+document.getElementById('pdf-link').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default action (e.g., following the link)
+    
+    // Specify the URL of the PDF file
+    var pdfUrl = 'donate.pdf';
+    
+    // Open the PDF file
+    openPDF(pdfUrl);
+});
+
+</script>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>
